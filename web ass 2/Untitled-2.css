@@ -1,0 +1,158 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#8cc078;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.container{
+width:700px;
+}
+
+h1{
+text-align:center;
+margin-bottom:20px;
+}
+
+/* TWO COLUMN LAYOUT */
+
+.main-layout{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:20px;
+margin-bottom:20px;
+}
+
+/* CARD STYLE (USED BY ALL SECTIONS) */
+
+.card{
+background:rgb(255, 255, 255);
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* SEARCH */
+
+.search-section{
+display:flex;
+flex-direction:column;
+gap:10px;
+}x
+
+.search-section input{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.search-section button{
+padding:10px;
+background:#026f11;
+color:rgb(255, 255, 255);
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.search-section button:hover{
+background:#1f63cc;
+}
+
+/* RESULT */
+
+.result-section{
+text-align:center;
+}
+
+/* HISTORY HEADER */
+
+.history-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:10px;
+}
+
+#clearHistory{
+background:#216506;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:5px;
+cursor:pointer;
+}
+
+#clearHistory:hover{
+background:#025608;
+}
+
+/* HISTORY LIST */
+
+#historyList{
+list-style:none;
+}
+
+#historyList li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:8px;
+border-bottom:1px solid #eee;
+cursor:pointer;
+}
+
+.delete-btn{
+background:none;
+border:none;
+color:rgb(24, 101, 11);
+cursor:pointer;
+font-size:14px;
+}
+/* RECENT SEARCH LIST SCROLL */
+
+#historyList{
+list-style:none;
+max-height:180px;
+overflow-y:auto;
+padding-right:5px;
+}
+#historyList::-webkit-scrollbar{
+width:6px;
+}
+
+#historyList::-webkit-scrollbar-track{
+background:#f1f1f1;
+border-radius:10px;
+}
+
+#historyList::-webkit-scrollbar-thumb{
+background:#888;
+border-radius:10px;
+}
+
+#historyList::-webkit-scrollbar-thumb:hover{
+background:#555;
+}
+
+
+
+body{
+background-image:url("https://i.pinimg.com/1200x/f3/b5/37/f3b5373b3b18b63f16ea5a35efbee08f.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
